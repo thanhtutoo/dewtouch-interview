@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['uses' => 'ReportController@index']);
+Route::post('report/update/{id}', ['as' => 'report/update', 'uses' => 'ReportController@update']);
