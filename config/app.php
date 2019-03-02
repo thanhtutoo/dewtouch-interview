@@ -13,8 +13,11 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
-
+    'name' => "Dewtouch Online Test 2",
+    'db_fields' => [
+        'name',
+        'email'
+    ],
     /*
     |--------------------------------------------------------------------------
     | Application Environment
