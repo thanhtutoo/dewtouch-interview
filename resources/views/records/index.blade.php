@@ -170,7 +170,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="/">Dew Online Test 2</a>
     </div>
   </div>
 </nav>   

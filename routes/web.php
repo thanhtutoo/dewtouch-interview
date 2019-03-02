@@ -13,10 +13,6 @@ use App\{User,Record};
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('record', function () {
     return view('records.index');
 });
 
