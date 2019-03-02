@@ -1,5 +1,6 @@
 <?php
-
+use Yajra\Datatables\Datatables;
+use App\{User,Record};
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +15,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('record', function () {
+    return view('records.index');
+});
+
+Route::get('serverSide', [
+    'as'   => 'serverSide',
+    'uses' => function () {
+        $users = Record::all();
+        return Datatables::of($users)->make();
+    }
+]);
