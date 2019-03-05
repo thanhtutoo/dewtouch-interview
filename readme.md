@@ -1,8 +1,5 @@
 
-## About Question: Listing Record too slow ,try to optimize it.
-
-
-pleaes run this command first:
+## Pleaes run this command every time after you checkout the branch and before you test:
 
 - composer install
 - composer dump-autoload
