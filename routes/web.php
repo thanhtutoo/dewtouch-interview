@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('popup.index');
 });
+
+Route::post('popup','PopupController@showResult')->name('popup');
